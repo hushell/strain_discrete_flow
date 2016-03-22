@@ -1,0 +1,8 @@
+1. To run the code, you may need to compile mex files in ./external/mex*/. Follow the readme files there for instructions.
+
+2. test_navier_stokes.m has been tested, which does the following: 
+a) A vector field is generated from the Navier-Stokes dynamic system; 
+b) im1 is warped according to the vector field, resulting im2; 
+c) Call opt_flow_pair(im1,im2,params) to estimate the transformation (i.e., the vector field).
+
+3. test_navier_stokes_noise_batch.m should work as well, but didn't check. We test different noise levels and different SIFT patch sizes in that file.
