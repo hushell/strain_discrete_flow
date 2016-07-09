@@ -1,14 +1,14 @@
 % load images
 %fpath = './frame10.png';
 %fpath = './Mars-1.jpg';
-fpath = './0275.png';
+fpath = './data/0275.png';
 img_src1 = im2double(imread(fpath));
 if size(img_src1,3) == 3
     img_src1 = rgb2gray(img_src1);
 end
 %fpath = './frame11.png';
 %fpath = './Mars-2.jpg';
-fpath = './0279.png';
+fpath = './data/0279.png';
 img_src2 = im2double(imread(fpath));
 if size(img_src2,3) == 3
     img_src2 = rgb2gray(img_src2);

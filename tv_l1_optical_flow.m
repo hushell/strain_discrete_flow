@@ -1,5 +1,11 @@
 function [u, v, w] = tv_l1_optical_flow(I1, I2, options) 
 % Inputs: I1, I2 are two consecutive images (only grayscale allowed)
+%         options.lambda (10-100)
+%         options.beta (0.001,0.01,0.1)
+%         options.warps (1-5)
+%         options.max_iter (50-200)
+%         options.pyramid_levels (100-1000)
+%         options.pyramid_factors (0.5-0.9)
 % Outputs: (u,v) is the flow, where size(u) = size(v) = size(I1)
 %          w is the estimated illumination changes
 % Author: Thomas Pock and Chen Yunjin and Shell Hu
